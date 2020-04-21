@@ -1,0 +1,1270 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2019.4">
+  <Nodes>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="0">C:\Users\Alex\Downloads\OneDrive_1_4-15-2020\risks_top5.csv</File>
+          <FormatSpecificOptions>
+            <CodePage>28591</CodePage>
+            <Delimeter>,</Delimeter>
+            <IgnoreErrors>False</IgnoreErrors>
+            <FieldLen>254</FieldLen>
+            <AllowShareWrite>False</AllowShareWrite>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>risks_top5.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="location_id" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-15-2020\risks_top5.csv" type="V_String" />
+            <Field name="location_name" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-15-2020\risks_top5.csv" type="V_String" />
+            <Field name="start_year" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-15-2020\risks_top5.csv" type="V_String" />
+            <Field name="end_year" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-15-2020\risks_top5.csv" type="V_String" />
+            <Field name="category" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-15-2020\risks_top5.csv" type="V_String" />
+            <Field name="rank" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-15-2020\risks_top5.csv" type="V_String" />
+            <Field name="rei_id" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-15-2020\risks_top5.csv" type="V_String" />
+            <Field name="rei_name" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-15-2020\risks_top5.csv" type="V_String" />
+            <Field name="endyear_peer_average" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-15-2020\risks_top5.csv" type="V_String" />
+            <Field name="endyear_x peer_average" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-15-2020\risks_top5.csv" type="V_String" />
+            <Field name="3-Year avg rateofchange" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-15-2020\risks_top5.csv" type="V_String" />
+            <Field name="pa_rateofchange" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-15-2020\risks_top5.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="0">C:\Users\Alex\Downloads\OneDrive_1_4-15-2020\causes_top5.csv</File>
+          <FormatSpecificOptions>
+            <CodePage>28591</CodePage>
+            <Delimeter>,</Delimeter>
+            <IgnoreErrors>False</IgnoreErrors>
+            <FieldLen>254</FieldLen>
+            <AllowShareWrite>False</AllowShareWrite>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>causes_top5.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="location_id" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-15-2020\causes_top5.csv" type="V_String" />
+            <Field name="location_name" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-15-2020\causes_top5.csv" type="V_String" />
+            <Field name="start_year" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-15-2020\causes_top5.csv" type="V_String" />
+            <Field name="end_year" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-15-2020\causes_top5.csv" type="V_String" />
+            <Field name="category" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-15-2020\causes_top5.csv" type="V_String" />
+            <Field name="rank" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-15-2020\causes_top5.csv" type="V_String" />
+            <Field name="cause_id" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-15-2020\causes_top5.csv" type="V_String" />
+            <Field name="cause_name" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-15-2020\causes_top5.csv" type="V_String" />
+            <Field name="endyear_peer_average" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-15-2020\causes_top5.csv" type="V_String" />
+            <Field name="endyear_x peer_average" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-15-2020\causes_top5.csv" type="V_String" />
+            <Field name="3-Year avg rateofchange" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-15-2020\causes_top5.csv" type="V_String" />
+            <Field name="pa_rateofchange" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-15-2020\causes_top5.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="174" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="location_name" />
+            <Field field="start_year" />
+            <Field field="end_year" />
+            <Field field="rei_name" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="location_name" />
+            <Field field="start_year" />
+            <Field field="end_year" />
+            <Field field="rei_name" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_rei_id" selected="True" rename="RC_ID" input="Left_" />
+                <SelectField field="Left_rei_name" selected="True" rename="Name" input="Left_" />
+                <SelectField field="Right_location_id" selected="False" rename="Right_location_id" input="Right_" />
+                <SelectField field="Right_location_name" selected="False" rename="Right_location_name" input="Right_" />
+                <SelectField field="Right_start_year" selected="False" rename="Right_start_year" input="Right_" />
+                <SelectField field="Right_end_year" selected="False" rename="Right_end_year" input="Right_" />
+                <SelectField field="Right_rei_id" selected="False" rename="Right_rei_id" input="Right_" />
+                <SelectField field="Right_rei_name" selected="False" rename="Right_rei_name" input="Right_" />
+                <SelectField field="Right_cause_id" selected="True" rename="RCR_ID" input="Right_" />
+                <SelectField field="Right_cause_name" selected="True" rename="RelationshipName" input="Right_" />
+                <SelectField field="Right_RF (DALY rate)" selected="False" input="Right_" />
+                <SelectField field="Right_RF Lower" selected="False" input="Right_" />
+                <SelectField field="Right_RF Upper" selected="False" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="0">C:\Users\Alex\Downloads\OneDrive_1_4-15-2020\top5riskcauses_rp.csv</File>
+          <FormatSpecificOptions>
+            <CodePage>28591</CodePage>
+            <Delimeter>,</Delimeter>
+            <IgnoreErrors>False</IgnoreErrors>
+            <FieldLen>254</FieldLen>
+            <AllowShareWrite>False</AllowShareWrite>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>top5riskcauses_rp.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="location_id" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-15-2020\top5riskcauses_rp.csv" type="V_String" />
+            <Field name="location_name" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-15-2020\top5riskcauses_rp.csv" type="V_String" />
+            <Field name="start_year" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-15-2020\top5riskcauses_rp.csv" type="V_String" />
+            <Field name="end_year" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-15-2020\top5riskcauses_rp.csv" type="V_String" />
+            <Field name="rei_id" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-15-2020\top5riskcauses_rp.csv" type="V_String" />
+            <Field name="rei_name" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-15-2020\top5riskcauses_rp.csv" type="V_String" />
+            <Field name="cause_id" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-15-2020\top5riskcauses_rp.csv" type="V_String" />
+            <Field name="cause_name" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-15-2020\top5riskcauses_rp.csv" type="V_String" />
+            <Field name="RF (DALY rate)" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-15-2020\top5riskcauses_rp.csv" type="V_String" />
+            <Field name="RF Lower" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-15-2020\top5riskcauses_rp.csv" type="V_String" />
+            <Field name="RF Upper" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-15-2020\top5riskcauses_rp.csv" type="V_String" />
+            <Field name="RF(%)" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-15-2020\top5riskcauses_rp.csv" type="V_String" />
+            <Field name="RF(%) Lower" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-15-2020\top5riskcauses_rp.csv" type="V_String" />
+            <Field name="RF(%) Upper" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-15-2020\top5riskcauses_rp.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="174" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="location_name" />
+            <Field field="start_year" />
+            <Field field="end_year" />
+            <Field field="cause_name" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="location_name" />
+            <Field field="start_year" />
+            <Field field="end_year" />
+            <Field field="cause_name" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_cause_id" selected="True" rename="RC_ID" input="Left_" />
+                <SelectField field="Left_cause_name" selected="True" rename="Name" input="Left_" />
+                <SelectField field="Right_location_id" selected="False" rename="Right_location_id" input="Right_" />
+                <SelectField field="Right_location_name" selected="False" rename="Right_location_name" input="Right_" />
+                <SelectField field="Right_start_year" selected="False" rename="Right_start_year" input="Right_" />
+                <SelectField field="Right_end_year" selected="False" rename="Right_end_year" input="Right_" />
+                <SelectField field="Right_rei_id" selected="True" rename="RCR_ID" input="Right_" />
+                <SelectField field="Right_rei_name" selected="True" rename="RelationshipName" input="Right_" />
+                <SelectField field="Right_cause_id" selected="False" input="Right_" />
+                <SelectField field="Right_cause_name" selected="False" input="Right_" />
+                <SelectField field="Right_RF (DALY rate)" selected="False" input="Right_" />
+                <SelectField field="Right_RF Lower" selected="False" input="Right_" />
+                <SelectField field="Right_RF Upper" selected="False" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="306" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="402" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="0">C:\Users\Alex\Downloads\RiskCause_Top5_Rel.csv</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <LineEndStyle>CRLF</LineEndStyle>
+            <Delimeter>,</Delimeter>
+            <ForceQuotes>False</ForceQuotes>
+            <HeaderRow>True</HeaderRow>
+            <CodePage>28591</CodePage>
+            <WriteBOM>True</WriteBOM>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>RiskCause_Top5_Rel.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="402" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="0">C:\Users\Alex\Downloads\OneDrive_1_4-13-2020\risks_peers.csv</File>
+          <FormatSpecificOptions>
+            <CodePage>28591</CodePage>
+            <Delimeter>,</Delimeter>
+            <IgnoreErrors>False</IgnoreErrors>
+            <FieldLen>254</FieldLen>
+            <AllowShareWrite>False</AllowShareWrite>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>risks_peers.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="selected_countryid" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-13-2020\risks_peers.csv" type="V_String" />
+            <Field name="selected_country" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-13-2020\risks_peers.csv" type="V_String" />
+            <Field name="start_year" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-13-2020\risks_peers.csv" type="V_String" />
+            <Field name="end_year" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-13-2020\risks_peers.csv" type="V_String" />
+            <Field name="rei_id" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-13-2020\risks_peers.csv" type="V_String" />
+            <Field name="rei_name" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-13-2020\risks_peers.csv" type="V_String" />
+            <Field name="location_id" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-13-2020\risks_peers.csv" type="V_String" />
+            <Field name="location_name" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-13-2020\risks_peers.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="342" y="450" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="location_name" />
+            <Field field="name" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="location_name" />
+            <Field field="rei_name" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_location_id" selected="False" rename="Right_location_id" input="Right_" />
+                <SelectField field="Right_location_name" selected="False" rename="Right_location_name" input="Right_" />
+                <SelectField field="Right_rei_id" selected="False" rename="Right_rei_id" input="Right_" />
+                <SelectField field="Right_rei_name" selected="False" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="582" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="0">C:\Users\Alex\Downloads\OneDrive_1_4-13-2020\causes_peers.csv</File>
+          <FormatSpecificOptions>
+            <CodePage>28591</CodePage>
+            <Delimeter>,</Delimeter>
+            <IgnoreErrors>False</IgnoreErrors>
+            <FieldLen>254</FieldLen>
+            <AllowShareWrite>False</AllowShareWrite>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>causes_peers.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="selected_countryid" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-13-2020\causes_peers.csv" type="V_String" />
+            <Field name="selected_country" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-13-2020\causes_peers.csv" type="V_String" />
+            <Field name="start_year" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-13-2020\causes_peers.csv" type="V_String" />
+            <Field name="end_year" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-13-2020\causes_peers.csv" type="V_String" />
+            <Field name="cause_id" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-13-2020\causes_peers.csv" type="V_String" />
+            <Field name="cause_name" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-13-2020\causes_peers.csv" type="V_String" />
+            <Field name="location_id" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-13-2020\causes_peers.csv" type="V_String" />
+            <Field name="location_name" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-13-2020\causes_peers.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="138" y="402" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="&quot;Risk&quot;" field="Type" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Type = "Risk"
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="222" y="402" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="rei_name" selected="True" rename="name" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="138" y="582" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="&quot;Cause&quot;" field="Type" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Type = "Cause"
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="222" y="582" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="cause_name" selected="True" rename="name" />
+            <SelectField field="rei_name" selected="False" rename="name" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="342" y="594" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="location_name" />
+            <Field field="name" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="location_name" />
+            <Field field="cause_name" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_location_id" selected="False" rename="Right_location_id" input="Right_" />
+                <SelectField field="Right_location_name" selected="False" rename="Right_location_name" input="Right_" />
+                <SelectField field="Right_cause_id" selected="False" rename="Right_cause_id" input="Right_" />
+                <SelectField field="Right_cause_name" selected="False" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="222" y="462" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="0">C:\Users\Alex\Downloads\OneDrive_1_4-15-2020\risk_daly_rate_abridged(cast).csv</File>
+          <FormatSpecificOptions>
+            <CodePage>28591</CodePage>
+            <Delimeter>,</Delimeter>
+            <IgnoreErrors>False</IgnoreErrors>
+            <FieldLen>254</FieldLen>
+            <AllowShareWrite>False</AllowShareWrite>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>risk_daly_rate_abridged(cast).csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="location_id" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-15-2020\risk_daly_rate_abridged(cast).csv" type="V_String" />
+            <Field name="location_name" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-15-2020\risk_daly_rate_abridged(cast).csv" type="V_String" />
+            <Field name="rei_id" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-15-2020\risk_daly_rate_abridged(cast).csv" type="V_String" />
+            <Field name="rei_name" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-15-2020\risk_daly_rate_abridged(cast).csv" type="V_String" />
+            <Field name="estimate" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-15-2020\risk_daly_rate_abridged(cast).csv" type="V_String" />
+            <Field name="2003" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-15-2020\risk_daly_rate_abridged(cast).csv" type="V_String" />
+            <Field name="2004" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-15-2020\risk_daly_rate_abridged(cast).csv" type="V_String" />
+            <Field name="2005" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-15-2020\risk_daly_rate_abridged(cast).csv" type="V_String" />
+            <Field name="2006" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-15-2020\risk_daly_rate_abridged(cast).csv" type="V_String" />
+            <Field name="2007" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-15-2020\risk_daly_rate_abridged(cast).csv" type="V_String" />
+            <Field name="2008" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-15-2020\risk_daly_rate_abridged(cast).csv" type="V_String" />
+            <Field name="2009" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-15-2020\risk_daly_rate_abridged(cast).csv" type="V_String" />
+            <Field name="2010" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-15-2020\risk_daly_rate_abridged(cast).csv" type="V_String" />
+            <Field name="2011" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-15-2020\risk_daly_rate_abridged(cast).csv" type="V_String" />
+            <Field name="2012" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-15-2020\risk_daly_rate_abridged(cast).csv" type="V_String" />
+            <Field name="2013" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-15-2020\risk_daly_rate_abridged(cast).csv" type="V_String" />
+            <Field name="2014" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-15-2020\risk_daly_rate_abridged(cast).csv" type="V_String" />
+            <Field name="2015" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-15-2020\risk_daly_rate_abridged(cast).csv" type="V_String" />
+            <Field name="2016" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-15-2020\risk_daly_rate_abridged(cast).csv" type="V_String" />
+            <Field name="2017" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-15-2020\risk_daly_rate_abridged(cast).csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="23">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="222" y="654" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="0">C:\Users\Alex\Downloads\OneDrive_1_4-15-2020\cause_daly_rate_abridged(cast).csv</File>
+          <FormatSpecificOptions>
+            <CodePage>28591</CodePage>
+            <Delimeter>,</Delimeter>
+            <IgnoreErrors>False</IgnoreErrors>
+            <FieldLen>254</FieldLen>
+            <AllowShareWrite>False</AllowShareWrite>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>cause_daly_rate_abridged(cast).csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="location_id" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-15-2020\cause_daly_rate_abridged(cast).csv" type="V_String" />
+            <Field name="location_name" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-15-2020\cause_daly_rate_abridged(cast).csv" type="V_String" />
+            <Field name="cause_id" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-15-2020\cause_daly_rate_abridged(cast).csv" type="V_String" />
+            <Field name="cause_name" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-15-2020\cause_daly_rate_abridged(cast).csv" type="V_String" />
+            <Field name="estimate" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-15-2020\cause_daly_rate_abridged(cast).csv" type="V_String" />
+            <Field name="2003" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-15-2020\cause_daly_rate_abridged(cast).csv" type="V_String" />
+            <Field name="2004" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-15-2020\cause_daly_rate_abridged(cast).csv" type="V_String" />
+            <Field name="2005" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-15-2020\cause_daly_rate_abridged(cast).csv" type="V_String" />
+            <Field name="2006" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-15-2020\cause_daly_rate_abridged(cast).csv" type="V_String" />
+            <Field name="2007" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-15-2020\cause_daly_rate_abridged(cast).csv" type="V_String" />
+            <Field name="2008" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-15-2020\cause_daly_rate_abridged(cast).csv" type="V_String" />
+            <Field name="2009" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-15-2020\cause_daly_rate_abridged(cast).csv" type="V_String" />
+            <Field name="2010" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-15-2020\cause_daly_rate_abridged(cast).csv" type="V_String" />
+            <Field name="2011" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-15-2020\cause_daly_rate_abridged(cast).csv" type="V_String" />
+            <Field name="2012" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-15-2020\cause_daly_rate_abridged(cast).csv" type="V_String" />
+            <Field name="2013" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-15-2020\cause_daly_rate_abridged(cast).csv" type="V_String" />
+            <Field name="2014" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-15-2020\cause_daly_rate_abridged(cast).csv" type="V_String" />
+            <Field name="2015" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-15-2020\cause_daly_rate_abridged(cast).csv" type="V_String" />
+            <Field name="2016" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-15-2020\cause_daly_rate_abridged(cast).csv" type="V_String" />
+            <Field name="2017" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-15-2020\cause_daly_rate_abridged(cast).csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="24">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="462" y="510" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="25">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="558" y="510" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="0">C:\Users\Alex\Downloads\RiskCause_Peers_DALY.csv</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <LineEndStyle>CRLF</LineEndStyle>
+            <Delimeter>,</Delimeter>
+            <ForceQuotes>False</ForceQuotes>
+            <HeaderRow>True</HeaderRow>
+            <CodePage>28591</CodePage>
+            <WriteBOM>True</WriteBOM>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>RiskCause_Peers_DALY.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="26">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="714" y="474" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="0">C:\Users\Alex\Downloads\OneDrive_1_4-15-2020\risk_daly_rate_abridged(cast).csv</File>
+          <FormatSpecificOptions>
+            <CodePage>28591</CodePage>
+            <Delimeter>,</Delimeter>
+            <IgnoreErrors>False</IgnoreErrors>
+            <FieldLen>254</FieldLen>
+            <AllowShareWrite>False</AllowShareWrite>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>risk_daly_rate_abridged(cast).csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="location_id" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-15-2020\risk_daly_rate_abridged(cast).csv" type="V_String" />
+            <Field name="location_name" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-15-2020\risk_daly_rate_abridged(cast).csv" type="V_String" />
+            <Field name="rei_id" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-15-2020\risk_daly_rate_abridged(cast).csv" type="V_String" />
+            <Field name="rei_name" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-15-2020\risk_daly_rate_abridged(cast).csv" type="V_String" />
+            <Field name="estimate" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-15-2020\risk_daly_rate_abridged(cast).csv" type="V_String" />
+            <Field name="2003" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-15-2020\risk_daly_rate_abridged(cast).csv" type="V_String" />
+            <Field name="2004" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-15-2020\risk_daly_rate_abridged(cast).csv" type="V_String" />
+            <Field name="2005" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-15-2020\risk_daly_rate_abridged(cast).csv" type="V_String" />
+            <Field name="2006" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-15-2020\risk_daly_rate_abridged(cast).csv" type="V_String" />
+            <Field name="2007" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-15-2020\risk_daly_rate_abridged(cast).csv" type="V_String" />
+            <Field name="2008" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-15-2020\risk_daly_rate_abridged(cast).csv" type="V_String" />
+            <Field name="2009" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-15-2020\risk_daly_rate_abridged(cast).csv" type="V_String" />
+            <Field name="2010" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-15-2020\risk_daly_rate_abridged(cast).csv" type="V_String" />
+            <Field name="2011" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-15-2020\risk_daly_rate_abridged(cast).csv" type="V_String" />
+            <Field name="2012" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-15-2020\risk_daly_rate_abridged(cast).csv" type="V_String" />
+            <Field name="2013" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-15-2020\risk_daly_rate_abridged(cast).csv" type="V_String" />
+            <Field name="2014" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-15-2020\risk_daly_rate_abridged(cast).csv" type="V_String" />
+            <Field name="2015" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-15-2020\risk_daly_rate_abridged(cast).csv" type="V_String" />
+            <Field name="2016" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-15-2020\risk_daly_rate_abridged(cast).csv" type="V_String" />
+            <Field name="2017" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-15-2020\risk_daly_rate_abridged(cast).csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="27">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="714" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="0">C:\Users\Alex\Downloads\OneDrive_1_4-15-2020\cause_daly_rate_abridged(cast).csv</File>
+          <FormatSpecificOptions>
+            <CodePage>28591</CodePage>
+            <Delimeter>,</Delimeter>
+            <IgnoreErrors>False</IgnoreErrors>
+            <FieldLen>254</FieldLen>
+            <AllowShareWrite>False</AllowShareWrite>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>cause_daly_rate_abridged(cast).csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="location_id" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-15-2020\cause_daly_rate_abridged(cast).csv" type="V_String" />
+            <Field name="location_name" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-15-2020\cause_daly_rate_abridged(cast).csv" type="V_String" />
+            <Field name="cause_id" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-15-2020\cause_daly_rate_abridged(cast).csv" type="V_String" />
+            <Field name="cause_name" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-15-2020\cause_daly_rate_abridged(cast).csv" type="V_String" />
+            <Field name="estimate" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-15-2020\cause_daly_rate_abridged(cast).csv" type="V_String" />
+            <Field name="2003" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-15-2020\cause_daly_rate_abridged(cast).csv" type="V_String" />
+            <Field name="2004" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-15-2020\cause_daly_rate_abridged(cast).csv" type="V_String" />
+            <Field name="2005" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-15-2020\cause_daly_rate_abridged(cast).csv" type="V_String" />
+            <Field name="2006" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-15-2020\cause_daly_rate_abridged(cast).csv" type="V_String" />
+            <Field name="2007" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-15-2020\cause_daly_rate_abridged(cast).csv" type="V_String" />
+            <Field name="2008" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-15-2020\cause_daly_rate_abridged(cast).csv" type="V_String" />
+            <Field name="2009" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-15-2020\cause_daly_rate_abridged(cast).csv" type="V_String" />
+            <Field name="2010" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-15-2020\cause_daly_rate_abridged(cast).csv" type="V_String" />
+            <Field name="2011" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-15-2020\cause_daly_rate_abridged(cast).csv" type="V_String" />
+            <Field name="2012" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-15-2020\cause_daly_rate_abridged(cast).csv" type="V_String" />
+            <Field name="2013" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-15-2020\cause_daly_rate_abridged(cast).csv" type="V_String" />
+            <Field name="2014" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-15-2020\cause_daly_rate_abridged(cast).csv" type="V_String" />
+            <Field name="2015" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-15-2020\cause_daly_rate_abridged(cast).csv" type="V_String" />
+            <Field name="2016" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-15-2020\cause_daly_rate_abridged(cast).csv" type="V_String" />
+            <Field name="2017" size="254" source="File: C:\Users\Alex\Downloads\OneDrive_1_4-15-2020\cause_daly_rate_abridged(cast).csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="28">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="858" y="378" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>estimate</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2020-04-18 17:32:53</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>val</Operand>
+              <StartDate>2020-04-18 17:32:53</StartDate>
+              <EndDate>2020-04-18 17:32:53</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[estimate] = "val"</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="29">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="858" y="474" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>estimate</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2020-04-18 17:33:04</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>upper</Operand>
+              <StartDate>2020-04-18 17:33:04</StartDate>
+              <EndDate>2020-04-18 17:33:04</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[estimate] = "upper"</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="30">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="858" y="570" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>estimate</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2020-04-18 17:33:18</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>lower</Operand>
+              <StartDate>2020-04-18 17:33:18</StartDate>
+              <EndDate>2020-04-18 17:33:18</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[estimate] = "lower"</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="31">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="858" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>estimate</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2020-04-18 17:33:26</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>val</Operand>
+              <StartDate>2020-04-18 17:33:26</StartDate>
+              <EndDate>2020-04-18 17:33:26</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[estimate] = "val"</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="32">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="858" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>estimate</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2020-04-18 17:33:32</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>upper</Operand>
+              <StartDate>2020-04-18 17:33:32</StartDate>
+              <EndDate>2020-04-18 17:33:32</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[estimate] = "upper"</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="33">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="858" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>estimate</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2020-04-18 17:33:49</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>lower</Operand>
+              <StartDate>2020-04-18 17:33:49</StartDate>
+              <EndDate>2020-04-18 17:33:49</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[estimate] = "lower"</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="34">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="954" y="378" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="0">C:\Users\Alex\Downloads\risk_daly_rate(cast)_val.csv</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <LineEndStyle>CRLF</LineEndStyle>
+            <Delimeter>,</Delimeter>
+            <ForceQuotes>False</ForceQuotes>
+            <HeaderRow>True</HeaderRow>
+            <CodePage>28591</CodePage>
+            <WriteBOM>True</WriteBOM>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>risk_daly_rate(cast)_val.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="35">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="954" y="474" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="0">C:\Users\Alex\Downloads\risk_daly_rate(cast)_upper.csv</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <LineEndStyle>CRLF</LineEndStyle>
+            <Delimeter>,</Delimeter>
+            <ForceQuotes>False</ForceQuotes>
+            <HeaderRow>True</HeaderRow>
+            <CodePage>28591</CodePage>
+            <WriteBOM>True</WriteBOM>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>risk_daly_rate(cast)_upper.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="36">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="954" y="570" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="0">C:\Users\Alex\Downloads\risk_daly_rate(cast)_lower.csv</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <LineEndStyle>CRLF</LineEndStyle>
+            <Delimeter>,</Delimeter>
+            <ForceQuotes>False</ForceQuotes>
+            <HeaderRow>True</HeaderRow>
+            <CodePage>28591</CodePage>
+            <WriteBOM>True</WriteBOM>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>risk_daly_rate(cast)_lower.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="37">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="954" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="0">C:\Users\Alex\Downloads\cause_daly_rate(cast)_val.csv</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <LineEndStyle>CRLF</LineEndStyle>
+            <Delimeter>,</Delimeter>
+            <ForceQuotes>False</ForceQuotes>
+            <HeaderRow>True</HeaderRow>
+            <CodePage>28591</CodePage>
+            <WriteBOM>True</WriteBOM>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>cause_daly_rate(cast)_val.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="38">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="954" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="0">C:\Users\Alex\Downloads\cause_daly_rate(cast)_upper.csv</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <LineEndStyle>CRLF</LineEndStyle>
+            <Delimeter>,</Delimeter>
+            <ForceQuotes>False</ForceQuotes>
+            <HeaderRow>True</HeaderRow>
+            <CodePage>28591</CodePage>
+            <WriteBOM>True</WriteBOM>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>cause_daly_rate(cast)_upper.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="39">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="954" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="0">C:\Users\Alex\Downloads\cause_daly_rate(cast)_lower.csv</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <LineEndStyle>CRLF</LineEndStyle>
+            <Delimeter>,</Delimeter>
+            <ForceQuotes>False</ForceQuotes>
+            <HeaderRow>True</HeaderRow>
+            <CodePage>28591</CodePage>
+            <WriteBOM>True</WriteBOM>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>cause_daly_rate(cast)_lower.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="7" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="7" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="9" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="9" Connection="Right" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="7" Connection="Join" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="9" Connection="Join" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="15" Connection="Join" />
+      <Destination ToolID="24" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="21" Connection="Join" />
+      <Destination ToolID="24" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Output" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Output" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Output" />
+      <Destination ToolID="15" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Output" />
+      <Destination ToolID="15" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="Output" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="20" Connection="Output" />
+      <Destination ToolID="21" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="23" Connection="Output" />
+      <Destination ToolID="21" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="24" Connection="Output" />
+      <Destination ToolID="25" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="26" Connection="Output" />
+      <Destination ToolID="28" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="26" Connection="Output" />
+      <Destination ToolID="29" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="26" Connection="Output" />
+      <Destination ToolID="30" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="27" Connection="Output" />
+      <Destination ToolID="31" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="27" Connection="Output" />
+      <Destination ToolID="32" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="27" Connection="Output" />
+      <Destination ToolID="33" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="28" Connection="True" />
+      <Destination ToolID="34" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="29" Connection="True" />
+      <Destination ToolID="35" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="30" Connection="False" />
+      <Destination ToolID="36" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="31" Connection="True" />
+      <Destination ToolID="37" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="32" Connection="True" />
+      <Destination ToolID="38" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="33" Connection="True" />
+      <Destination ToolID="39" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>TransformationFlow</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

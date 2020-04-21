@@ -1,0 +1,573 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2019.4">
+  <Nodes>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="138" y="138" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\Alex\Downloads\IHME_GBD_2017_REI_HIERARCHY_Y2018M11D18.XLSX|||`Sheet 1$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>IHME_GBD_2017_REI_HIERARCHY_Y2018M11D18.XLSX
+Query=`Sheet 1$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="rei_id" source="File: C:\Users\Alex\Downloads\IHME_GBD_2017_REI_HIERARCHY_Y2018M11D18.XLSX|||`Sheet 1$`" type="Double" />
+            <Field name="rei_name" size="255" source="File: C:\Users\Alex\Downloads\IHME_GBD_2017_REI_HIERARCHY_Y2018M11D18.XLSX|||`Sheet 1$`" type="V_String" />
+            <Field name="parent_id" source="File: C:\Users\Alex\Downloads\IHME_GBD_2017_REI_HIERARCHY_Y2018M11D18.XLSX|||`Sheet 1$`" type="Double" />
+            <Field name="rei_type" size="255" source="File: C:\Users\Alex\Downloads\IHME_GBD_2017_REI_HIERARCHY_Y2018M11D18.XLSX|||`Sheet 1$`" type="V_String" />
+            <Field name="level" source="File: C:\Users\Alex\Downloads\IHME_GBD_2017_REI_HIERARCHY_Y2018M11D18.XLSX|||`Sheet 1$`" type="Double" />
+            <Field name="sort_order" source="File: C:\Users\Alex\Downloads\IHME_GBD_2017_REI_HIERARCHY_Y2018M11D18.XLSX|||`Sheet 1$`" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="258" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="rei_name" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="rei_name" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_rei_id" selected="False" rename="risk_id" input="Right_" />
+                <SelectField field="Right_rei_name" selected="False" input="Right_" />
+                <SelectField field="Right_parent_id" selected="True" rename="risk_parent_id" input="Right_" />
+                <SelectField field="Right_rei_type" selected="False" input="Right_" />
+                <SelectField field="Right_level" selected="True" rename="risk_level" input="Right_" />
+                <SelectField field="Right_sort_order" selected="False" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="258" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\Alex\Downloads\IHME_GBD_2017_CAUSE_HIERARCHY_Y2018M11D18.XLSX|||`Sheet 1$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>IHME_GBD_2017_CAUSE_HIERARCHY_Y2018M11D18.XLSX
+Query=`Sheet 1$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="cause_id" source="File: C:\Users\Alex\Downloads\IHME_GBD_2017_CAUSE_HIERARCHY_Y2018M11D18.XLSX|||`Sheet 1$`" type="Double" />
+            <Field name="cause_name" size="255" source="File: C:\Users\Alex\Downloads\IHME_GBD_2017_CAUSE_HIERARCHY_Y2018M11D18.XLSX|||`Sheet 1$`" type="V_String" />
+            <Field name="parent_id" source="File: C:\Users\Alex\Downloads\IHME_GBD_2017_CAUSE_HIERARCHY_Y2018M11D18.XLSX|||`Sheet 1$`" type="Double" />
+            <Field name="level" source="File: C:\Users\Alex\Downloads\IHME_GBD_2017_CAUSE_HIERARCHY_Y2018M11D18.XLSX|||`Sheet 1$`" type="Double" />
+            <Field name="cause_outline" size="255" source="File: C:\Users\Alex\Downloads\IHME_GBD_2017_CAUSE_HIERARCHY_Y2018M11D18.XLSX|||`Sheet 1$`" type="V_String" />
+            <Field name="sort_order" source="File: C:\Users\Alex\Downloads\IHME_GBD_2017_CAUSE_HIERARCHY_Y2018M11D18.XLSX|||`Sheet 1$`" type="Double" />
+            <Field name="yll_only" size="255" source="File: C:\Users\Alex\Downloads\IHME_GBD_2017_CAUSE_HIERARCHY_Y2018M11D18.XLSX|||`Sheet 1$`" type="V_String" />
+            <Field name="yld_only" size="255" source="File: C:\Users\Alex\Downloads\IHME_GBD_2017_CAUSE_HIERARCHY_Y2018M11D18.XLSX|||`Sheet 1$`" type="V_String" />
+            <Field name="F9" source="File: C:\Users\Alex\Downloads\IHME_GBD_2017_CAUSE_HIERARCHY_Y2018M11D18.XLSX|||`Sheet 1$`" type="Double" />
+            <Field name="Cause" size="255" source="File: C:\Users\Alex\Downloads\IHME_GBD_2017_CAUSE_HIERARCHY_Y2018M11D18.XLSX|||`Sheet 1$`" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="402" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="cause_name" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="cause_name" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_cause_id" selected="False" rename="Right_cause_id" input="Right_" />
+                <SelectField field="Right_cause_name" selected="False" input="Right_" />
+                <SelectField field="Right_parent_id" selected="True" rename="cause_parent_id" input="Right_" />
+                <SelectField field="Right_level" selected="True" rename="cause_level" input="Right_" />
+                <SelectField field="Right_cause_outline" selected="False" input="Right_" />
+                <SelectField field="Right_sort_order" selected="False" input="Right_" />
+                <SelectField field="Right_yll_only" selected="False" input="Right_" />
+                <SelectField field="Right_yld_only" selected="False" input="Right_" />
+                <SelectField field="Right_F9" selected="False" input="Right_" />
+                <SelectField field="Right_Cause" selected="False" rename="Right_Cause" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="510" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="location_name" selected="True" />
+            <SelectField field="year" selected="True" />
+            <SelectField field="sex_name" selected="True" rename="sex" />
+            <SelectField field="age_name" selected="True" rename="age" />
+            <SelectField field="cause_level" selected="True" />
+            <SelectField field="cause_id" selected="True" />
+            <SelectField field="cause_parent_id" selected="True" />
+            <SelectField field="cause_name" selected="True" rename="cause" />
+            <SelectField field="risk_level" selected="True" />
+            <SelectField field="rei_id" selected="True" rename="risk_id" />
+            <SelectField field="risk_parent_id" selected="True" />
+            <SelectField field="rei_name" selected="True" rename="risk" />
+            <SelectField field="measure_name" selected="True" rename="measure" />
+            <SelectField field="metric_name" selected="True" rename="metric" />
+            <SelectField field="upper" selected="True" />
+            <SelectField field="lower" selected="True" />
+            <SelectField field="val" selected="True" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
+        <Position x="630" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <GroupFields>
+            <Field field="location_name" />
+            <Field field="sex" />
+            <Field field="age" />
+            <Field field="cause_level" />
+            <Field field="cause_id" />
+            <Field field="cause_parent_id" />
+            <Field field="cause" />
+            <Field field="risk_level" />
+            <Field field="risk_id" />
+            <Field field="risk_parent_id" />
+            <Field field="risk" />
+            <Field field="measure" />
+            <Field field="metric" />
+            <Field field="upper" />
+            <Field field="lower" />
+          </GroupFields>
+          <HeaderField field="year" />
+          <DataField field="val" />
+          <Methods>
+            <Method method="First" />
+            <Separator>,</Separator>
+            <FieldSize value="2048" />
+          </Methods>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="location_name" size="254" source="CrossTab:Group:First:" type="V_String" />
+            <Field name="sex" size="254" source="CrossTab:Group:First:" type="V_String" />
+            <Field name="age" size="254" source="CrossTab:Group:First:" type="V_String" />
+            <Field name="cause_level" source="CrossTab:Group:First:" type="Double" />
+            <Field name="cause_id" size="254" source="CrossTab:Group:First:" type="V_String" />
+            <Field name="cause_parent_id" source="CrossTab:Group:First:" type="Double" />
+            <Field name="cause" size="254" source="CrossTab:Group:First:" type="V_String" />
+            <Field name="risk_level" source="CrossTab:Group:First:" type="Double" />
+            <Field name="risk_id" size="254" source="CrossTab:Group:First:" type="V_String" />
+            <Field name="risk_parent_id" source="CrossTab:Group:First:" type="Double" />
+            <Field name="risk" size="254" source="CrossTab:Group:First:" type="V_String" />
+            <Field name="measure" size="254" source="CrossTab:Group:First:" type="V_String" />
+            <Field name="metric" size="254" source="CrossTab:Group:First:" type="V_String" />
+            <Field name="upper" size="254" source="CrossTab:Group:First:" type="V_String" />
+            <Field name="lower" size="254" source="CrossTab:Group:First:" type="V_String" />
+            <Field name="2003" size="254" source="File: C:\Users\Alex\Downloads\IHME-GBD_2017_DATA-19cdca24-1\IHME-GBD_2017_DATA-19cdca24-1.csv" type="V_String" />
+            <Field name="2004" size="254" source="File: C:\Users\Alex\Downloads\IHME-GBD_2017_DATA-19cdca24-1\IHME-GBD_2017_DATA-19cdca24-1.csv" type="V_String" />
+            <Field name="2005" size="254" source="File: C:\Users\Alex\Downloads\IHME-GBD_2017_DATA-19cdca24-1\IHME-GBD_2017_DATA-19cdca24-1.csv" type="V_String" />
+            <Field name="2006" size="254" source="File: C:\Users\Alex\Downloads\IHME-GBD_2017_DATA-19cdca24-1\IHME-GBD_2017_DATA-19cdca24-1.csv" type="V_String" />
+            <Field name="2007" size="254" source="File: C:\Users\Alex\Downloads\IHME-GBD_2017_DATA-19cdca24-1\IHME-GBD_2017_DATA-19cdca24-1.csv" type="V_String" />
+            <Field name="2008" size="254" source="File: C:\Users\Alex\Downloads\IHME-GBD_2017_DATA-19cdca24-1\IHME-GBD_2017_DATA-19cdca24-1.csv" type="V_String" />
+            <Field name="2009" size="254" source="File: C:\Users\Alex\Downloads\IHME-GBD_2017_DATA-19cdca24-1\IHME-GBD_2017_DATA-19cdca24-1.csv" type="V_String" />
+            <Field name="2010" size="254" source="File: C:\Users\Alex\Downloads\IHME-GBD_2017_DATA-19cdca24-1\IHME-GBD_2017_DATA-19cdca24-1.csv" type="V_String" />
+            <Field name="2011" size="254" source="File: C:\Users\Alex\Downloads\IHME-GBD_2017_DATA-19cdca24-1\IHME-GBD_2017_DATA-19cdca24-1.csv" type="V_String" />
+            <Field name="2012" size="254" source="File: C:\Users\Alex\Downloads\IHME-GBD_2017_DATA-19cdca24-1\IHME-GBD_2017_DATA-19cdca24-1.csv" type="V_String" />
+            <Field name="2013" size="254" source="File: C:\Users\Alex\Downloads\IHME-GBD_2017_DATA-19cdca24-1\IHME-GBD_2017_DATA-19cdca24-1.csv" type="V_String" />
+            <Field name="2014" size="254" source="File: C:\Users\Alex\Downloads\IHME-GBD_2017_DATA-19cdca24-1\IHME-GBD_2017_DATA-19cdca24-1.csv" type="V_String" />
+            <Field name="2015" size="254" source="File: C:\Users\Alex\Downloads\IHME-GBD_2017_DATA-19cdca24-1\IHME-GBD_2017_DATA-19cdca24-1.csv" type="V_String" />
+            <Field name="2016" size="254" source="File: C:\Users\Alex\Downloads\IHME-GBD_2017_DATA-19cdca24-1\IHME-GBD_2017_DATA-19cdca24-1.csv" type="V_String" />
+            <Field name="2017" size="254" source="File: C:\Users\Alex\Downloads\IHME-GBD_2017_DATA-19cdca24-1\IHME-GBD_2017_DATA-19cdca24-1.csv" type="V_String" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="location_name" order="Asc" />
+            <Field field="sex" order="Asc" />
+            <Field field="age" order="Asc" />
+            <Field field="cause_level" order="Asc" />
+            <Field field="cause_id" order="Asc" />
+            <Field field="cause_parent_id" order="Asc" />
+            <Field field="cause" order="Asc" />
+            <Field field="risk_level" order="Asc" />
+            <Field field="risk_id" order="Asc" />
+            <Field field="risk_parent_id" order="Asc" />
+            <Field field="risk" order="Asc" />
+            <Field field="measure" order="Asc" />
+            <Field field="metric" order="Asc" />
+            <Field field="upper" order="Asc" />
+            <Field field="lower" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCrossTab" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="750" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="location_name" action="GroupBy" rename="location" />
+            <SummarizeField field="cause_level" action="GroupBy" rename="cause_level" />
+            <SummarizeField field="cause" action="GroupBy" rename="cause" />
+            <SummarizeField field="cause_id" action="GroupBy" rename="cause_id" />
+            <SummarizeField field="cause_parent_id" action="GroupBy" rename="cause_parent_id" />
+            <SummarizeField field="risk_level" action="GroupBy" rename="risk_level" />
+            <SummarizeField field="risk" action="GroupBy" rename="risk" />
+            <SummarizeField field="risk_id" action="GroupBy" rename="risk_id" />
+            <SummarizeField field="risk_parent_id" action="GroupBy" rename="risk_parent_id" />
+            <SummarizeField field="sex" action="GroupBy" rename="sex" />
+            <SummarizeField field="age" action="GroupBy" rename="age" />
+            <SummarizeField field="measure" action="GroupBy" rename="measure" />
+            <SummarizeField field="metric" action="GroupBy" rename="metric" />
+            <SummarizeField field="2003" action="Concat" rename="2003">
+              <Concat_Start />
+              <Separator>,</Separator>
+              <Concat_End />
+            </SummarizeField>
+            <SummarizeField field="2004" action="Concat" rename="2004">
+              <Concat_Start />
+              <Separator>,</Separator>
+              <Concat_End />
+            </SummarizeField>
+            <SummarizeField field="2005" action="Concat" rename="2005">
+              <Concat_Start />
+              <Separator>,</Separator>
+              <Concat_End />
+            </SummarizeField>
+            <SummarizeField field="2006" action="Concat" rename="2006">
+              <Concat_Start />
+              <Separator>,</Separator>
+              <Concat_End />
+            </SummarizeField>
+            <SummarizeField field="2007" action="Concat" rename="2007">
+              <Concat_Start />
+              <Separator>,</Separator>
+              <Concat_End />
+            </SummarizeField>
+            <SummarizeField field="2008" action="Concat" rename="2008">
+              <Concat_Start />
+              <Separator>,</Separator>
+              <Concat_End />
+            </SummarizeField>
+            <SummarizeField field="2009" action="Concat" rename="2009">
+              <Concat_Start />
+              <Separator>,</Separator>
+              <Concat_End />
+            </SummarizeField>
+            <SummarizeField field="2010" action="Concat" rename="2010">
+              <Concat_Start />
+              <Separator>,</Separator>
+              <Concat_End />
+            </SummarizeField>
+            <SummarizeField field="2011" action="Concat" rename="2011">
+              <Concat_Start />
+              <Separator>,</Separator>
+              <Concat_End />
+            </SummarizeField>
+            <SummarizeField field="2012" action="Concat" rename="2012">
+              <Concat_Start />
+              <Separator>,</Separator>
+              <Concat_End />
+            </SummarizeField>
+            <SummarizeField field="2013" action="Concat" rename="2013">
+              <Concat_Start />
+              <Separator>,</Separator>
+              <Concat_End />
+            </SummarizeField>
+            <SummarizeField field="2014" action="Concat" rename="2014">
+              <Concat_Start />
+              <Separator>,</Separator>
+              <Concat_End />
+            </SummarizeField>
+            <SummarizeField field="2015" action="Concat" rename="2015">
+              <Concat_Start />
+              <Separator>,</Separator>
+              <Concat_End />
+            </SummarizeField>
+            <SummarizeField field="2016" action="Concat" rename="2016">
+              <Concat_Start />
+              <Separator>,</Separator>
+              <Concat_End />
+            </SummarizeField>
+            <SummarizeField field="2017" action="Concat" rename="2017">
+              <Concat_Start />
+              <Separator>,</Separator>
+              <Concat_End />
+            </SummarizeField>
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="162" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="year" selected="True" />
+            <SelectField field="measure_id" selected="False" />
+            <SelectField field="location_id" selected="False" />
+            <SelectField field="location_name" selected="True" />
+            <SelectField field="sex_id" selected="False" />
+            <SelectField field="sex_name" selected="True" />
+            <SelectField field="age_id" selected="False" />
+            <SelectField field="age_name" selected="True" />
+            <SelectField field="cause_id" selected="True" />
+            <SelectField field="cause_name" selected="True" />
+            <SelectField field="rei_id" selected="True" />
+            <SelectField field="rei_name" selected="True" />
+            <SelectField field="metric_id" selected="False" />
+            <SelectField field="measure_name" selected="True" />
+            <SelectField field="metric_name" selected="True" />
+            <SelectField field="upper" selected="True" />
+            <SelectField field="lower" selected="True" />
+            <SelectField field="val" selected="True" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="870" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="0">C:\Users\Alex\Downloads\data.csv</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <LineEndStyle>CRLF</LineEndStyle>
+            <Delimeter>,</Delimeter>
+            <ForceQuotes>False</ForceQuotes>
+            <HeaderRow>True</HeaderRow>
+            <CodePage>28591</CodePage>
+            <WriteBOM>True</WriteBOM>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>data.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="0">C:\Users\Alex\Downloads\IHME-GBD_2017_DATA-19cdca24-1\IHME-GBD_2017_DATA-19cdca24-1.csv</File>
+          <FormatSpecificOptions>
+            <CodePage>28591</CodePage>
+            <Delimeter>,</Delimeter>
+            <IgnoreErrors>False</IgnoreErrors>
+            <FieldLen>254</FieldLen>
+            <AllowShareWrite>False</AllowShareWrite>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>IHME-GBD_2017_DATA-19cdca24-1.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="measure_id" size="254" source="File: C:\Users\Alex\Downloads\IHME-GBD_2017_DATA-19cdca24-1\IHME-GBD_2017_DATA-19cdca24-1.csv" type="V_String" />
+            <Field name="measure_name" size="254" source="File: C:\Users\Alex\Downloads\IHME-GBD_2017_DATA-19cdca24-1\IHME-GBD_2017_DATA-19cdca24-1.csv" type="V_String" />
+            <Field name="location_id" size="254" source="File: C:\Users\Alex\Downloads\IHME-GBD_2017_DATA-19cdca24-1\IHME-GBD_2017_DATA-19cdca24-1.csv" type="V_String" />
+            <Field name="location_name" size="254" source="File: C:\Users\Alex\Downloads\IHME-GBD_2017_DATA-19cdca24-1\IHME-GBD_2017_DATA-19cdca24-1.csv" type="V_String" />
+            <Field name="sex_id" size="254" source="File: C:\Users\Alex\Downloads\IHME-GBD_2017_DATA-19cdca24-1\IHME-GBD_2017_DATA-19cdca24-1.csv" type="V_String" />
+            <Field name="sex_name" size="254" source="File: C:\Users\Alex\Downloads\IHME-GBD_2017_DATA-19cdca24-1\IHME-GBD_2017_DATA-19cdca24-1.csv" type="V_String" />
+            <Field name="age_id" size="254" source="File: C:\Users\Alex\Downloads\IHME-GBD_2017_DATA-19cdca24-1\IHME-GBD_2017_DATA-19cdca24-1.csv" type="V_String" />
+            <Field name="age_name" size="254" source="File: C:\Users\Alex\Downloads\IHME-GBD_2017_DATA-19cdca24-1\IHME-GBD_2017_DATA-19cdca24-1.csv" type="V_String" />
+            <Field name="cause_id" size="254" source="File: C:\Users\Alex\Downloads\IHME-GBD_2017_DATA-19cdca24-1\IHME-GBD_2017_DATA-19cdca24-1.csv" type="V_String" />
+            <Field name="cause_name" size="254" source="File: C:\Users\Alex\Downloads\IHME-GBD_2017_DATA-19cdca24-1\IHME-GBD_2017_DATA-19cdca24-1.csv" type="V_String" />
+            <Field name="rei_id" size="254" source="File: C:\Users\Alex\Downloads\IHME-GBD_2017_DATA-19cdca24-1\IHME-GBD_2017_DATA-19cdca24-1.csv" type="V_String" />
+            <Field name="rei_name" size="254" source="File: C:\Users\Alex\Downloads\IHME-GBD_2017_DATA-19cdca24-1\IHME-GBD_2017_DATA-19cdca24-1.csv" type="V_String" />
+            <Field name="metric_id" size="254" source="File: C:\Users\Alex\Downloads\IHME-GBD_2017_DATA-19cdca24-1\IHME-GBD_2017_DATA-19cdca24-1.csv" type="V_String" />
+            <Field name="metric_name" size="254" source="File: C:\Users\Alex\Downloads\IHME-GBD_2017_DATA-19cdca24-1\IHME-GBD_2017_DATA-19cdca24-1.csv" type="V_String" />
+            <Field name="year" size="254" source="File: C:\Users\Alex\Downloads\IHME-GBD_2017_DATA-19cdca24-1\IHME-GBD_2017_DATA-19cdca24-1.csv" type="V_String" />
+            <Field name="val" size="254" source="File: C:\Users\Alex\Downloads\IHME-GBD_2017_DATA-19cdca24-1\IHME-GBD_2017_DATA-19cdca24-1.csv" type="V_String" />
+            <Field name="upper" size="254" source="File: C:\Users\Alex\Downloads\IHME-GBD_2017_DATA-19cdca24-1\IHME-GBD_2017_DATA-19cdca24-1.csv" type="V_String" />
+            <Field name="lower" size="254" source="File: C:\Users\Alex\Downloads\IHME-GBD_2017_DATA-19cdca24-1\IHME-GBD_2017_DATA-19cdca24-1.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="7" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="7" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Join" />
+      <Destination ToolID="9" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="9" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Join" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>ExtractionFlow</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
